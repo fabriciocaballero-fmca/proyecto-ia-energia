@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabricio Caballero | Proyecto IA</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5b677a;
+      --line: #d9e2ea;
+      --paper: #f7fafc;
+      --white: #ffffff;
+      --teal: #0f766e;
+      --blue: #2563eb;
+      --red: #dc2626;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    nav strong {
+      font-size: 15px;
+      letter-spacing: 0.02em;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 16px;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 34px 24px 64px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+      gap: 34px;
+      align-items: center;
+      padding: 22px 0 28px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.08;
+      margin: 0 0 12px;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      color: var(--teal);
+      font-weight: 700;
+      margin: 0 0 18px;
+      font-size: 18px;
+    }
+
+    .intro {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0;
+    }
+
+    .hero img,
+    .project-figure img {
+      width: 100%;
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    section {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 26px;
+      color: var(--ink);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .skills li {
+      background: #e8f5f3;
+      color: #0b5853;
+      border: 1px solid #bfe4df;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .project-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .fact {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .fact span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .fact strong {
+      font-size: 20px;
+      color: var(--ink);
+    }
+
+    .project-text p {
+      margin-top: 0;
+      color: var(--muted);
+    }
+
+    .project-text ul {
+      margin: 14px 0 0;
+      padding-left: 19px;
+      color: var(--muted);
+    }
+
+    .contact a {
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 28px 24px 40px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 820px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+
+      .hero,
+      .grid,
+      .project-layout {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .facts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Fabricio Caballero</strong>
+      <div>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#educacion">Educacion</a>
+        <a href="#proyecto">Proyecto IA</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div>
+        <h1>Fabricio Moises Caballero Aquino</h1>
+        <p class="subtitle">Estudiante de Ingenieria Electromecanica | IA aplicada a energia</p>
+        <p class="intro">
+          Soy estudiante de Ingenieria Electromecanica con interes en inteligencia artificial aplicada,
+          analisis de datos, energia y series temporales. Este sitio presenta un proyecto de prediccion
+          energetica que combina datos meteorologicos, patrones horarios y aprendizaje automatico.
+        </p>
+      </div>
+      <img src="../assets/predictions_vs_actual.png" alt="Grafico del proyecto con predicciones y valores reales">
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>Grid Search</li>
+        <li>Pandas</li>
+        <li>NumPy</li>
+        <li>Series temporales</li>
+        <li>Visualizacion de datos</li>
+        <li>Google Colab</li>
+      </ul>
+    </section>
+
+    <section id="educacion">
+      <h2>Educacion</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Carrera</h3>
+          <p>Ingenieria Electromecanica</p>
+        </div>
+        <div class="card">
+          <h3>Institucion</h3>
+          <p>Universidad Nacional de Asuncion - Facultad de Ingenieria</p>
+        </div>
+        <div class="card">
+          <h3>Avance academico</h3>
+          <p>10mo semestre</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyecto">
+      <h2>Proyecto de Inteligencia Artificial</h2>
+      <div class="project-layout">
+        <div class="project-text">
+          <h3>Pronostico horario de demanda energetica con inteligencia artificial</h3>
+          <p>
+            El proyecto busca predecir el comportamiento horario de la variable <strong>SIN Imputed</strong>
+            utilizando datos meteorologicos, variables temporales, feriados y patrones de consumo energetico.
+            Su relevancia esta en apoyar el analisis y la planificacion de necesidades energeticas mediante
+            modelos reproducibles.
+          </p>
+          <ul>
+            <li><strong>Dataset:</strong> serie temporal horaria con temperatura, humedad, presion, precipitacion y viento.</li>
+            <li><strong>Modelo:</strong> regresion Ridge optimizada con Grid Search.</li>
+            <li><strong>Features:</strong> calendario, feriados, franjas horarias, rezagos, medias moviles y sensibilidad termica.</li>
+            <li><strong>Repositorio:</strong> pendiente de publicacion en GitHub.</li>
+          </ul>
+          <div class="facts">
+            <div class="fact"><span>RMSE</span><strong>129.93</strong></div>
+            <div class="fact"><span>MAE</span><strong>91.49</strong></div>
+            <div class="fact"><span>MAPE</span><strong>4.66%</strong></div>
+            <div class="fact"><span>R2</span><strong>0.9438</strong></div>
+          </div>
+        </div>
+        <div class="project-figure">
+          <img src="../assets/rmse_by_feature_set.png" alt="Grafico de RMSE por conjunto de features">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Para consultas academicas o contacto profesional:
+        <a href="mailto:fabricio.caballero@fiuna.edu.py">fabricio.caballero@fiuna.edu.py</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Proyecto desarrollado para Inteligencia Artificial Aplicada.
+  </footer>
+</body>
+</html>
